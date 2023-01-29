@@ -1,6 +1,6 @@
 <?php
 /**
- * Header file for the Twenty Twenty WordPress default theme.
+ * Header file for Planty child theme .
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
@@ -29,9 +29,10 @@
 		<?php
 		wp_body_open();
 		?>
-		
+
 		<header id="site-header" class="header-footer-group">
-		
+        <!-- <div class="test">LOL</div> -->
+
 			<div class="header-inner section-inner">
 
 				<div class="header-titles-wrapper">
