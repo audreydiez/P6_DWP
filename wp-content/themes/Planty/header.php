@@ -31,7 +31,7 @@
 		?>
 
 		<header id="site-header" class="header-footer-group">
-            <div class="test">LOL</div>
+            <div class="test">test</div>
 
 			<div class="header-inner section-inner">
 
@@ -87,16 +87,19 @@
 						?>
 
 							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
-
+                                <div>AH</div>
 								<ul class="primary-menu reset-list-style">
 
 								<?php
 								if ( has_nav_menu( 'primary' ) ) {
-
+                                    // https://developer.wordpress.org/reference/functions/wp_nav_menu/
+                                    // https://stackoverflow.com/questions/26180688/how-to-add-class-to-link-in-wp-nav-menu
 									wp_nav_menu(
 										array(
-											'container'  => '',
+											'container'  => 'section',
+                                            'container_class'    => 'POUET',
 											'items_wrap' => '%3$s',
+                                            'menu_class'      => 'coucouCmoi',
 											'theme_location' => 'primary',
 										)
 									);
@@ -107,6 +110,7 @@
 										array(
 											'match_menu_classes' => true,
 											'show_sub_menu_icons' => true,
+                                            'menu_class'      => 'coucouCmoi',
 											'title_li' => false,
 											'walker'   => new TwentyTwenty_Walker_Page(),
 										)
@@ -126,7 +130,7 @@
 						?>
 
 						<div class="header-toggles hide-no-js">
-
+                        
 						<?php
 						if ( has_nav_menu( 'expanded' ) ) {
 							?>

@@ -34,7 +34,7 @@
  
 # Ignore log files and databases.
 *.log
-*.sql
+# *.sql
 *.sqlite
  
 # PhpStorm files.
