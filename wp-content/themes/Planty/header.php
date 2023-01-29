@@ -31,7 +31,7 @@
 		?>
 
 		<header id="site-header" class="header-footer-group">
-        <!-- <div class="test">LOL</div> -->
+            <div class="test">LOL</div>
 
 			<div class="header-inner section-inner">
 
