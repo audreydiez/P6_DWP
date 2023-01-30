@@ -96,10 +96,9 @@
                                     // https://stackoverflow.com/questions/26180688/how-to-add-class-to-link-in-wp-nav-menu
 									wp_nav_menu(
 										array(
-											'container'  => 'section',
-                                            'container_class'    => 'POUET',
+											'container'  => '',
+											'container_class' => 'custom class',
 											'items_wrap' => '%3$s',
-                                            'menu_class'      => 'coucouCmoi',
 											'theme_location' => 'primary',
 										)
 									);
