@@ -9,10 +9,21 @@ function theme_enqueue_styles(){
 }
 
 // Test ajout class dans le menu puis target a dans css
-function add_menu_link_class( $classes, $item ) {
-    $classes[] = 'your-custom-class';
+function add_menu_class($classes, $item, $args)
+{
+    if ($args->theme_location == 'primary') {
+        $classes[] = 'navli';
+      }
+    
     return $classes;
 }
-add_filter( 'nav_menu_css_class', 'add_menu_link_class', 10, 2 );
+
+function add_menu_link_class($attrs)
+{
+    $attrs['class'] = 'nava';
+    return $attrs;
+}
 
 
+add_filter('nav_menu_css_class', 'add_menu_class', 10, 3);
+add_filter('nav_menu_link_attributes', 'add_menu_link_class');

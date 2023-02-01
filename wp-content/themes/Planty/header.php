@@ -94,14 +94,30 @@
 								if ( has_nav_menu( 'primary' ) ) {
                                     // https://developer.wordpress.org/reference/functions/wp_nav_menu/
                                     // https://stackoverflow.com/questions/26180688/how-to-add-class-to-link-in-wp-nav-menu
-									wp_nav_menu(
+									/* wp_nav_menu(
 										array(
 											'container'  => '',
 											'container_class' => 'custom class',
 											'items_wrap' => '%3$s',
 											'theme_location' => 'primary',
 										)
-									);
+									); */
+									// Surcharger la classe pour un css full custom + 'walker' => new Walker_Nav_Menu_Custom_Class,
+									/* class Walker_Nav_Menu_Custom_Class extends Walker_Nav_Menu {
+										function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+											$output .= '<li><a href="' . $item->url . '" class="link">' . $item->title . '</a></li>';
+										  }
+										} */
+
+										wp_nav_menu(array(											
+											'container' => 'ul',
+											'container_class' => false,
+											// Utiliser '<ul class="%2$s">%3$s</ul>' pour redéfinir le menu
+											'items_wrap' => '%3$s',											
+											'theme_location' => 'primary',
+										  ));
+
+									  
 
 								} elseif ( ! has_nav_menu( 'expanded' ) ) {
 
