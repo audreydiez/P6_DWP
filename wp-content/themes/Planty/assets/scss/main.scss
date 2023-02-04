@@ -4,3 +4,69 @@
         color: red
     } 
 }
+
+$color-btn-font: #fff;
+$color-font: #000;
+$color-hover: #DC9F96;
+$color-active: #C02E44;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+
+.planty_body {
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+}
+.planty_section-inner {
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%
+}
+
+.planty_p-nav_logo{
+    margin-left: 2rem;
+}
+
+.planty_p-nav_ul li{
+    //margin: 2.5rem 0 2rem 3rem;
+    padding: 2rem 2rem 2rem 0; 
+}
+
+.planty_p-nav_ul  a:not(:hover){
+    color: black!important;
+}
+.planty_p-nav_ul a:hover{
+    color: #C02E44;
+    text-decoration: none;
+}
+
+.planty_p-nav_ul a:visited{
+    color: black;
+}
+
+.planty_p-nav-order{    
+    background-color: #DC9F96;
+    padding: 2rem 4rem!important; 
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.planty_p-nav-order:hover{    
+    background-color: #C02E44;
+}
+
+.planty_p-nav-order a:not(:hover){    
+    color: #fff!important;
+}
+
+.planty_p-nav-order a:hover{    
+    color: #fff!important;
+}
+
+/* .planty_p-nav-order:hover{
+    padding: 0 2rem;
+    background-color: #C02E44;    
+}
+.planty_p-nav-order a:hover{
+    color: #fff;  
+} */

@@ -12,7 +12,7 @@ function theme_enqueue_styles(){
 function add_menu_class($classes, $item, $args)
 {
     if ($args->theme_location == 'primary') {
-        $classes[] = 'navli';
+        $classes[] = 'planty_p-nav_li';
       }
     
     return $classes;
@@ -20,10 +20,22 @@ function add_menu_class($classes, $item, $args)
 
 function add_menu_link_class($attrs)
 {
-    $attrs['class'] = 'nava';
+    $attrs['class'] = 'planty_p-nav_a';
     return $attrs;
 }
 
 
 add_filter('nav_menu_css_class', 'add_menu_class', 10, 3);
 add_filter('nav_menu_link_attributes', 'add_menu_link_class');
+
+//Ajout class body
+function add_body_class($classes) {
+    $classes[] = 'planty_body';
+    return $classes;
+}
+
+add_filter('body_class', 'add_body_class');
+
+/* add_filter( 'body_class', function( $classes ) {
+	return array_merge( $classes, array( 'class-name' ) );
+} ); */

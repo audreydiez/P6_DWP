@@ -31,9 +31,9 @@
 		?>
 
 		<header id="site-header" class="header-footer-group">
-            <div class="test">test</div>
+            
 
-			<div class="header-inner section-inner">
+			<div class="header-inner section-inner planty_section-inner">
 
 				<div class="header-titles-wrapper">
 
@@ -57,7 +57,7 @@
 
 					<?php } ?>
 
-					<div class="header-titles">
+					<div class="header-titles planty_p-nav_logo">
 
 						<?php
 							// Site title or logo.
@@ -86,9 +86,9 @@
 					if ( has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' ) ) {
 						?>
 
-							<nav class="primary-menu-wrapper" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
-                                <div>AH</div>
-								<ul class="primary-menu reset-list-style">
+							<nav class="primary-menu-wrapper planty_p-nav_nav" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
+                               
+								<ul class="primary-menu reset-list-style planty_p-nav_ul">
 
 								<?php
 								if ( has_nav_menu( 'primary' ) ) {
@@ -102,12 +102,23 @@
 											'theme_location' => 'primary',
 										)
 									); */
-									// Surcharger la classe pour un css full custom + 'walker' => new Walker_Nav_Menu_Custom_Class,
+									// Surcharger la classe pour un css full custom 
 									/* class Walker_Nav_Menu_Custom_Class extends Walker_Nav_Menu {
 										function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
 											$output .= '<li><a href="' . $item->url . '" class="link">' . $item->title . '</a></li>';
 										  }
-										} */
+										} 
+										
+										wp_nav_menu(array(											
+											'container' => 'ul',
+											'container_class' => false,
+											// Utiliser '<ul class="%2$s">%3$s</ul>' pour redéfinir le menu
+											'items_wrap' => '%3$s',			
+											'walker' => new Walker_Nav_Menu_Custom_Class,								
+											'theme_location' => 'primary',
+										  ));
+										
+										*/
 
 										wp_nav_menu(array(											
 											'container' => 'ul',
