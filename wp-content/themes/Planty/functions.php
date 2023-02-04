@@ -25,8 +25,8 @@ function add_menu_link_class($attrs)
 }
 
 
-add_filter('nav_menu_css_class', 'add_menu_class', 10, 3);
-add_filter('nav_menu_link_attributes', 'add_menu_link_class');
+//add_filter('nav_menu_css_class', 'add_menu_class', 10, 3);
+//add_filter('nav_menu_link_attributes', 'add_menu_link_class');
 
 //Ajout class body
 function add_body_class($classes) {

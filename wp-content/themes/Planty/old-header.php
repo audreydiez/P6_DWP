@@ -57,7 +57,7 @@
 
 					<?php } ?>
 
-					<div class="header-titles">
+					<div class="header-titles planty_p-nav_logo">
 
 						<?php
 							// Site title or logo.
@@ -86,9 +86,9 @@
 					if ( has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' ) ) {
 						?>
 
-							<nav class="primary-menu-wrapper " aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
+							<nav class="primary-menu-wrapper planty_p-nav_nav" aria-label="<?php echo esc_attr_x( 'Horizontal', 'menu', 'twentytwenty' ); ?>">
                                
-								<ul class="primary-menu reset-list-style">
+								<ul class="primary-menu reset-list-style planty_p-nav_ul">
 
 								<?php
 								if ( has_nav_menu( 'primary' ) ) {

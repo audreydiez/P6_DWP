@@ -23,7 +23,7 @@ $color-active: #C02E44;
     width: 100%
 }
 
-.planty_p-nav_logo{
+/* .planty_p-nav_logo{
     margin-left: 2rem;
 }
 
@@ -61,12 +61,69 @@ $color-active: #C02E44;
 
 .planty_p-nav-order a:hover{    
     color: #fff!important;
+} */
+
+.header-titles{
+    margin-left: 0;
 }
 
-/* .planty_p-nav-order:hover{
-    padding: 0 2rem;
-    background-color: #C02E44;    
+.header-inner .toggle{
+    margin-bottom: 1rem;
 }
-.planty_p-nav-order a:hover{
-    color: #fff;  
-} */
+
+.primary-menu  li{
+    //margin: 2.5rem 0 2rem 3rem;
+    padding: 2rem 2rem 2rem 0; 
+}
+
+.primary-menu   a:not(:hover){
+    color: black!important;
+}
+.primary-menu  a:hover{
+    color: #C02E44;
+    text-decoration: none;
+}
+
+.primary-menu  a:visited{
+    color: black;
+}
+
+.planty_p-nav-order{    
+    background-color: #DC9F96;
+    padding: 2rem 4rem!important; 
+    cursor: pointer;
+    transition: all 400ms;
+}
+
+.planty_p-nav-order:hover{    
+    background-color: #C02E44;
+}
+
+.planty_p-nav-order a:not(:hover){    
+    color: #fff!important;
+}
+
+.planty_p-nav-order a:hover{    
+    color: #fff!important;
+} 
+
+.site-logo img{
+    padding: 2.5rem 2rem 2rem 0; 
+    margin-left: 3rem!important;
+}
+
+
+// Responsive 
+
+.modal-menu .ancestor-wrapper a{
+    color: #000;
+    font-weight: 400!important;
+    text-decoration: none;
+    text-align: center;
+}
+.modal-menu .ancestor-wrapper a:hover{
+    color: #C02E44;
+}
+.modal-menu .ancestor-wrapper a:visited{
+    color: #000;
+}
