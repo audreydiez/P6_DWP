@@ -39,3 +39,8 @@ add_filter('body_class', 'add_body_class');
 /* add_filter( 'body_class', function( $classes ) {
 	return array_merge( $classes, array( 'class-name' ) );
 } ); */
+
+
+register_nav_menus( array(
+    'footer_custom' => __( 'Footer Custom', 'Planty' ),
+) );
