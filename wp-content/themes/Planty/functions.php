@@ -44,3 +44,6 @@ add_filter('body_class', 'add_body_class');
 register_nav_menus( array(
     'footer_custom' => __( 'Footer Custom', 'Planty' ),
 ) );
+
+
+
