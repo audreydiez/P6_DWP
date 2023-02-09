@@ -22,7 +22,7 @@ textarea
  }
 
  // Commander
- .wpcf7 .cmd-container p{
+ .wpcf7 .cmd-container{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -32,6 +32,25 @@ textarea
     gap: 20px;
  }
  
- .wpcf7 .cmd-container p img{
-    max-width: 200px;
- }
+.inner-ok p{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+
+ 
+.inner-ok span{
+    
+    width: 50%;
+}
+.inner-ok .quantity{
+    height: 50px;
+   
+}
+.inner-ok button{
+    height: 50px;
+    width: 50%;
+}
+
+
