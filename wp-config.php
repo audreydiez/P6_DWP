@@ -90,6 +90,9 @@ define( 'WP_DEBUG', true );
 define( 'WP_DEBUG_LOG', false );
 define( 'WP_DEBUG_DISPLAY', false );
 
+// Contact form
+define( 'WPCF7_AUTOP', false );
+
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
 
 /** Chemin absolu vers le dossier de WordPress. */
