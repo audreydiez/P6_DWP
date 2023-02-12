@@ -51,3 +51,28 @@ register_nav_menus( array(
 
 
 
+// Admin link
+/* add_filter( 'wp_nav_menu_items','primary_navigation', 10, 2 );
+function primary_navigation( $items, $args ) {
+    if ( is_user_logged_in() ) {
+        $items .= '<li class="custom-menu-link"><a href="'
+        . esc_url( home_url( '/' ) )
+        . get_the_author_link() .'">My Account</a></li>';
+    }
+    return $items;
+}
+ */
+
+// Admin link
+ function custom_nav_menu_item( $items, $args ) {
+    if (is_user_logged_in() && $args->theme_location == 'primary') {
+        $items_array = explode('</li>', $items);
+        $toInsert = '<li><a href="#">Lien personnalisé</a>';
+       array_splice(  $items_array, 1, 0, $toInsert );
+
+        $items = implode('', $items_array);
+        
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_items', 'custom_nav_menu_item', 10, 2 );

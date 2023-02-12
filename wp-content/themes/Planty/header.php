@@ -152,7 +152,7 @@
 						<?php
 					}
 
-					if ( true === $enable_header_search || has_nav_menu( 'expanded' ) ) {
+					/* if ( true === $enable_header_search || has_nav_menu( 'expanded' ) ) {
 						?>
 
 						<div class="header-toggles hide-no-js">
@@ -197,7 +197,7 @@
 
 						</div><!-- .header-toggles -->
 						<?php
-					}
+					} */
 					?>
 
 				</div><!-- .header-navigation-wrapper -->
