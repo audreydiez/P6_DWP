@@ -97,9 +97,15 @@
     margin-left: 3rem!important;
 }
 
+// Active link
+.primary-menu li.current-menu-item > a{
+    text-decoration: none;
+}
+
+
 
 // Responsive 
-.modal-menu .ancestor-wrapper a{
+.modal-menu  a{
     color: #000;
     font-weight: 400!important;
     text-decoration: none;

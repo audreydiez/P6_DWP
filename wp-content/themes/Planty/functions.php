@@ -67,8 +67,8 @@ function primary_navigation( $items, $args ) {
  function custom_nav_menu_item( $items, $args ) {
     if (is_user_logged_in() && $args->theme_location == 'primary') {
         $items_array = explode('</li>', $items);
-        $toInsert = '<li><a href="#">Lien personnalisé</a>';
-       array_splice(  $items_array, 1, 0, $toInsert );
+        $toInsert = '<li><a href="'. admin_url().'" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-admin">Admin</a>';
+        array_splice(  $items_array, 1, 0, $toInsert );
 
         $items = implode('', $items_array);
         
