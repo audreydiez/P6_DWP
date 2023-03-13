@@ -7,12 +7,12 @@
 /sitemap.xml.gz
  
 # Files in the root.
-*.pdf
-*.jpg
-*.jpeg
-*.png
-*.txt
-*.csv
+# *.pdf
+# *.jpg
+# *.jpeg
+# *.png
+# *.txt
+# *.csv
  
 # WP dirs.
 # wp-admin/*
